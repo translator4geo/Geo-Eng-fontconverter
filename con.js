@@ -45,3 +45,56 @@ let albpabet2 = {
         }
         document.getElementById('engout').innerHTML = output;
       }
+<script>
+      let albpabet1 = {
+        a: 'ა',
+        b: 'ბ',
+        c: 'ც',
+        d: 'დ',
+        e: 'ე',
+        f: 'ფ',
+        g: 'გ',
+        h: 'ჰ',
+        i: 'ი',
+        j: 'ჯ',
+        k: 'კ',
+        l: 'ლ',
+        m: 'მ',
+        n: 'ნ',
+        o: 'ო',
+        p: 'პ',
+        q: 'ქ',
+        r: 'რ',
+        s: 'ს',
+        t: 'ტ',
+        u: 'უ',
+        v: 'ვ',
+        w: 'წ',
+        x: 'ხ',
+        y: 'ყ',
+        z: 'ზ',
+        S: 'შ',
+        C: 'ჩ',
+        W: 'ჭ',
+        R: 'ღ',
+        T: 'თ',
+        Z: 'ძ',
+        '!': '!',
+        '?': '?',
+        ',': ',',
+        '.': '.',
+        ' ': ' ',
+      };
+      function convertToGeo() {
+        var output = '';
+        var inputValue = document.getElementById('eninput').value;
+        for (var i = 0; i < inputValue.length; i++) {
+          {
+            if ((inputValue[i] = undefined)) {
+              output += ' ';
+            }
+          }
+          output += albpabet1[inputValue[i]];
+        }
+        document.getElementById('geoout').innerHTML = output;
+      }
