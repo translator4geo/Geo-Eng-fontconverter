@@ -1,0 +1,47 @@
+let albpabet2 = {
+        ა: 'a',
+        ბ: 'b',
+        გ: 'g',
+        დ: 'd',
+        ე: 'e',
+        ვ: 'v',
+        ზ: 'z',
+        თ: 'T',
+        ი: 'i',
+        კ: 'k',
+        ლ: 'l',
+        მ: 'm',
+        ნ: 'n',
+        ო: 'o',
+        პ: 'p',
+        რ: 'r',
+        ს: 's',
+        ტ: 't',
+        უ: 'u',
+        ფ: 'f',
+        ქ: 'q',
+        ღ: 'R',
+        ყ: 'y',
+        შ: 'S',
+        ჩ: 'C',
+        ც: 'c',
+        ძ: 'Z',
+        წ: 'w',
+        ჭ: 'W',
+        ხ: 'x',
+        ჯ: 'j',
+        ჰ: 'h',
+        '!': '!',
+        '?': '?',
+        ',': ',',
+        '.': '.',
+        ' ': ' ',
+      };
+      function convertToEng() {
+        var output = '';
+        var inputValue = document.getElementById('geoinput').value;
+        for (var i = 0; i < inputValue.length; i++) {
+          output += albpabet2[inputValue[i]];
+        }
+        document.getElementById('engout').innerHTML = output;
+      }
