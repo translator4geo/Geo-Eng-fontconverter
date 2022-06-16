@@ -1,0 +1,42 @@
+ #input {
+        margin: 20px;
+        size: 40px;
+      }
+      .good {
+        background-color: rgb(212, 233, 139);
+        display: inline-block;
+      }
+      #btn {
+        margin: 20px;
+        background-color: rgb(233, 142, 210);
+      }
+      #georgian {
+        background: yellow;
+        display: block;
+        margin: 10px;
+      }
+
+      button {
+        display: block;
+        margin: 80px;
+        padding: 40px;
+      }
+      #english {
+        background: lightgrey;
+        display: inline-block;
+        margin: 10px;
+      }
+      input {
+        margin: 80px;
+        background: pink;
+        display: block;
+        inline-size: 50em;
+        inline-height: 40px;
+      }
+      #last {
+        display: block;
+        margin: 24px;
+      }
+      #convert {
+        background: lightblue;
+      }
