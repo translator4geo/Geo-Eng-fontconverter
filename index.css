@@ -1,4 +1,13 @@
-#input {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A Basic Alphabet Converter Template</title>
+
+    <style>
+      #input {
         margin: 20px;
         size: 40px;
       }
@@ -31,7 +40,7 @@
         background: pink;
         display: block;
         inline-size: 50em;
-        inline-height: 40px;
+        height: 40px;
       }
       #last {
         display: block;
@@ -40,3 +49,106 @@
       #convert {
         background: lightblue;
       }
+    </style>
+  </head>
+
+  <body>
+    <div class="good">
+      <input type="text" id="input" placeholder="აქ ჩაწერე" />
+
+      <button type="button" onclick="convert()">Convert!</button>
+    </div>
+
+    <p id="out">convert here</p>
+
+    <script>
+      var alphabet1 = {
+        a: 'ა',
+        b: 'ბ',
+        c: 'ც',
+        d: 'დ',
+        e: 'ე',
+        f: 'ფ',
+        g: 'გ',
+        h: 'ჰ',
+        i: 'ი',
+        j: 'ჯ',
+        k: 'კ',
+        l: 'ლ',
+        m: 'მ',
+        n: 'ნ',
+        o: 'ო',
+        p: 'პ',
+        q: 'ქ',
+        r: 'რ',
+        s: 'ს',
+        t: 'ტ',
+        u: 'უ',
+        v: 'ვ',
+        w: 'წ',
+        x: 'ხ',
+        y: 'ყ',
+        z: 'ზ',
+        S: 'შ',
+        C: 'ჩ',
+        W: 'ჭ',
+        R: 'ღ',
+        T: 'თ',
+        Z: 'ძ',
+        '!': '!',
+        '?': '?',
+        ',': ',',
+        '.': '.',
+        ' ': ' ',
+        ა: 'a',
+        ბ: 'b',
+        გ: 'g',
+        დ: 'd',
+        ე: 'e',
+        ვ: 'v',
+        ზ: 'z',
+        თ: 'T',
+        ი: 'i',
+        კ: 'k',
+        ლ: 'l',
+        მ: 'm',
+        ნ: 'n',
+        ო: 'o',
+        პ: 'p',
+        რ: 'r',
+        ს: 's',
+        ტ: 't',
+        უ: 'u',
+        ფ: 'f',
+        ქ: 'q',
+        ღ: 'R',
+        ყ: 'y',
+        შ: 'S',
+        ჩ: 'C',
+        ც: 'c',
+        ძ: 'Z',
+        წ: 'w',
+        ჭ: 'W',
+        ხ: 'x',
+        ჯ: 'j',
+        ჰ: 'h',
+        '!': '!',
+        '?': '?',
+        ',': ',',
+        '.': '.',
+        ' ': ' ',
+      };
+
+      // var alphabet2 = {};
+      function convert() {
+        var output = '';
+        var inputValue = document.getElementById('input').value;
+        for (var i = 0; i < inputValue.length; i++) {
+          output += alphabet1[inputValue[i]];
+        }
+
+        document.getElementById('out').innerHTML = output;
+      }
+    </script>
+  </body>
+</html>
